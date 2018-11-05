@@ -17,7 +17,7 @@ class MP3Importer
     @files = Dir.glob("*.mp3")
     Dir.chdir(current_dir)
     @files
-    binding.pry
+   
   end
     
    
@@ -30,6 +30,7 @@ class MP3Importer
       e = b[2]
       Song.new_by_filename(file)
     end 
+    binding.pry 
   end 
   
   
