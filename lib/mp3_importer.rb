@@ -24,13 +24,9 @@ class MP3Importer
   def import 
   
     @files.each do |file|
-      b = file.split(" - ")
-      c = b[0]
-      d = b[1]
-      e = b[2]
       Song.new_by_filename(file)
     end 
-    binding.pry 
+  
   end 
   
   
